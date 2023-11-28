@@ -1,0 +1,447 @@
+:root {
+  --white: #fff;
+  --white-secondary: #eee;
+  --black: #333;
+  --black-secondary: #666;
+  --main-color: #a0c49d;
+  --main-secondary: #c4d7b2;
+  --main-third: #e1ecc8;
+  --main-fourth: #f7ffe5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+header {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+header .judul {
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 8%;
+  background: var(--main-color);
+}
+
+header .judul h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--black);
+}
+
+header .judul h1 span {
+  color: var(--white);
+}
+
+header .navbar {
+  padding: 1rem 8%;
+  background: var(--main-secondary);
+  z-index: 999;
+}
+
+header .navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+header .navbar ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #666;
+  background-color: none;
+  border-radius: 0.2rem;
+  padding: 0.5rem 1rem;
+}
+
+header .navbar ul li a:hover {
+  color: var(--white);
+  background-color: var(--main-color);
+}
+
+main #home {
+  margin-top: 2rem;
+  min-height: 100vh;
+}
+
+main #home .container {
+  padding: 2rem 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main #home .container .jumbotron {
+  max-width: 80rem;
+}
+
+main #home .container .jumbotron h1 {
+  font-size: 5rem;
+  color: var(--main-color);
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+
+main #home .container .jumbotron article {
+  font-size: 1.5rem;
+  color: var(--black-secondary);
+  padding-bottom: 2rem;
+}
+
+main #home .container .jumbotron a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--white);
+  background: var(--main-color);
+  border-radius: 2rem;
+  padding: 0.8rem 2rem;
+}
+
+main #home .container .jumbotron a:hover {
+  background: var(--white);
+  color: var(--main-color);
+  border: 0.2rem solid var(--main-color);
+}
+
+main #home .container .gambar {
+  max-width: 80rem;
+}
+
+main #home .container .gambar img {
+  width: 50rem;
+}
+
+main #about {
+  background: var(--main-fourth);
+}
+
+main #about .container {
+  padding: 2rem 8%;
+  align-items: center;
+  justify-content: center;
+}
+
+main #about .container h1 {
+  text-align: center;
+  color: var(--main-color);
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+
+main #about .container p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #666;
+  padding: 1rem 4rem;
+  padding-bottom: 2rem;
+  line-height: 1.5;
+}
+
+main #destination {
+  background: var(--main-third);
+}
+
+main #destination .container {
+  padding: 2rem 8%;
+}
+
+main #destination .container h1 {
+  text-align: center;
+  color: var(--main-color);
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+
+main #destination .container .box-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem 2rem;
+}
+
+main #destination .container .box-content .box {
+  flex: 1 1 30rem;
+  background: var(--white-secondary);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+main #destination .container .box-content .box span {
+  font-weight: bolder;
+}
+
+main #destination .container .box-content .box .discount {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.5rem 0.5rem;
+  font-size: 1rem;
+  color: rgba(255, 0, 0, 1);
+  background: #fff;
+  z-index: 1;
+  border-radius: 1rem;
+}
+
+main #destination .container .box-content .box .gambar {
+  position: relative;
+  text-align: center;
+  padding-top: 2rem;
+  overflow: hidden;
+}
+
+main #destination .container .box-content .box .gambar img {
+  width: 100%;
+}
+
+main #destination .container .box-content .box:hover .gambar img {
+  transform: scale(1.2);
+  border-radius: 1rem;
+}
+
+main #destination .container .box-content .box .gambar .icons {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -7rem;
+  display: flex;
+}
+
+main #destination .container .box-content .box:hover .gambar .icons {
+  bottom: 0;
+}
+
+main #destination .container .box-content .box .gambar .icons a {
+  text-decoration: none;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 1rem;
+  width: 50%;
+  background: var(--white-secondary);
+  color: var(--main-color);
+}
+
+main #destination .container .box-content .box .gambar .icons .card-btn {
+  border-left: 0.1rem solid #fff7ff;
+  border-right: 0.1rem solid #fff7ff;
+  width: 100%;
+}
+
+main #destination .container .box-content .box .gambar .icons a:hover {
+  background: var(--main-color);
+  color: var(--main-secondary);
+}
+
+main #destination .container .box-content .box .isi {
+  padding: 1rem;
+  text-align: center;
+}
+
+main #destination .container .box-content .box .isi h3 {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+main #destination .container .box-content .box .isi .price {
+  font-size: 1.8rem;
+  color: var(--main-color);
+  font-weight: 700;
+  padding-top: 1rem;
+}
+
+main #destination .container .box-content .box .isi .price span {
+  font-size: 1.2rem;
+  color: #666;
+  font-weight: lighter;
+  text-decoration: line-through;
+}
+
+main #contact h1 {
+  text-align: center;
+  color: var(--main-color);
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+main #contact .container {
+  padding: 2rem 8%;
+  display: flex;
+  /* flex-wrap: wrap-reverse; */
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+main #contact .container .row {
+  flex: 1 1 60rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 1.5rem;
+  padding: 0 2rem;
+}
+
+main #contact .container .row form {
+  padding: 2rem 2rem;
+}
+
+main #contact .container .row form .box {
+  padding: 1rem;
+  font-size: 1rem;
+  color: #333;
+  text-transform: none;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+main #contact .container .row form textarea {
+  height: 16rem;
+  resize: none;
+}
+
+main #contact .container .row form .box:focus {
+  border: 0.1rem solid var(--main-color);
+  border-color: var(--main-color);
+  color: var(--black);
+}
+
+main #contact .container .row form .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.3rem;
+  border-radius: 2rem;
+  background: var(--main-color);
+  color: var(--white);
+  border: 0.1rem solid var(--white);
+}
+
+main #contact .container .bio {
+  flex: 1 1 20rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 1.5rem;
+  padding: 0 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+main #contact .container .bio .image img {
+  margin-top: 2rem;
+  justify-content: center;
+  width: 100%;
+}
+
+main #contact .container .bio h3 {
+  font-size: 1rem;
+  color: var(--main-color);
+  font-weight: 700;
+}
+
+main #contact .container .bio span {
+  font-size: 1.5rem;
+  color: var(--black);
+  margin-bottom: 1rem;
+}
+
+main aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+}
+
+main aside .sosmed {
+  height: 100%;
+  display: flex;
+}
+
+main aside .sosmed ul {
+  padding: 1.5rem 1rem;
+  margin: auto;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border: 0.2rem solid var(--main-color);
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+main aside .sosmed li {
+  list-style: none;
+}
+
+main aside .sosmed li a img {
+  width: 2rem;
+  color: var(--white);
+}
+
+main aside .social-media li a img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background: var(--main-color);
+  color: white;
+}
+
+footer .content p {
+  text-align: center;
+}
+
+footer .content p a {
+  text-decoration: none;
+  color: aqua;
+}
+
+footer .content p a:hover {
+  color: aliceblue;
+  transition: ease-in-out 0.5s;
+}
+
+/* Mediun device */
+@media screen and (max-width: 768px) {
+  header .fa-bars {
+    display: block;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #eee;
+    border: none;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header #toggler:checked ~ .navbar {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  header .navbar a {
+    font-size: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    display: block;
+  }
+}
